@@ -1,0 +1,39 @@
+.main-container {
+  display: grid;
+  place-items: center;
+
+  .startgame-button {
+    background: #46dced;
+    background: linear-gradient(77deg, #46dced 0%, #7dfb64 100%);
+    color: #4e4e4e;
+    padding: 15px;
+    margin-top: 30px;
+
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0,0,0,0.05);
+    font-size: 1.5rem;
+    transition: color 0.5s linear;
+    border: 0;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.board-container {
+  display: grid;
+  background-color: #4e4e4e;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, minmax(150px, 20%));
+  grid-template-rows: repeat(3, minmax(150px, 20%));
+  margin-top: 50px;
+  .mark {
+    font-size: 3rem; 
+    background-color: #f3f3f3;
+    display: grid;
+    place-items: center;
+  }
+  .mark:hover {
+    cursor: pointer;
+  }
+}
